@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/icons/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class=" nav">
+    <div class="nav-bar  d-flex">
+    <h1>To Do List <i class="fa-solid fa-pencil"></i></h1>
+    <button id="btn-mood"  class="btn btn-light"> Dark Mood <i class="fa-solid fa-moon"></i></button>
+    </div>
+    </div>
+      <div class="layout d-none">
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Add Your Task</h5>
+                </div>
+                <div class="modal-body">
+                  <input type="text" id="taskInput">
+                  <span class="none text-danger"></span>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary"   id="Add-close">Add Task</button>
+                  <button type="button" class="btn btn-danger" id="btn-close">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-grid">
+           <button id="addTask" class="btn blue my-5">Add Your Task</button>
+         </div>
+         <h2 class="text-center">Your Tasks <i class="fa-solid fa-clipboard-list"></i></h2>
+         <div class="container col-lg-6 col-md-8" id="MyDiv">
+            <div class="card">
+              <div class="d-grid mx-auto my-2 w-50">
+                <button class="btn btn-dark none" id="deleteAll">Delete All</button>
+              </div>
+             
+            <div id="confirm-modal">
+             <p>Are you sure you want to delete all tasks?</p>
+             <div class="d-flex">
+              <button id="confirm-delete-all">Yes</button>
+              <button id="cancel-delete-all">No</button>
+             </div>
+                </div>
+               <div id="overlay"></div>
+
+              <div class="count d-flex d-none">
+                <div class="selected"> Selected : 0</div>
+                <div class="pending"> Pending :0</div>
+              </div>
+                <div class="card-b">
+                <div class="alert alert-danger" id="EmptyTask"> Empty Tasks</div>
+                </div>
+                <div class="card-body"> </div>
+              </div>
+              <div class="space">
+              
+              </div>
+            </div>
+
+    <div class="copyRight">
+    <hr>
+    <h6>  © 2024 Rana Khaled. All Rights Reserved.</h6>
+    </div>
+   
+  
+    <script src="./js/main.js"></script>
+</body>
+</html>

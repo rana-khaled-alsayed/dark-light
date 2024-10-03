@@ -1,0 +1,156 @@
+body{
+    background-color:rgb(126, 188, 240) ;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    background-color:rgb(62, 163, 247);
+
+}
+.nav-bar{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.nav h1{
+    color: white;
+}
+.nav h1 i{
+    font-size: 30px;
+}
+#addTask{
+    width: 30%;
+    margin: auto;
+}
+.blue{
+    background-color:white;
+    color:black;
+}
+.blue:hover{
+    background-color:whitesmoke;
+}
+@media (max-width:750px){
+    #addTask{
+        width: 60%;
+        margin: auto;
+    }
+}
+.layout{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.432);
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+}
+.space{
+    width: 100%;
+    height: 300px;
+}
+.modal{
+    display: block;
+}
+.modal-header{
+   justify-content: space-around !important;
+}
+.modal-body input{
+    width: 100%;
+    margin: auto !important;
+}
+.modal-footer{
+    justify-content: space-between;
+}
+.modal-footer button{
+    width: 40%;
+}
+#MyDiv{
+    margin-top: 30px;
+}
+#MyDiv .card{
+    border: 1px solid rgb(62, 163, 247) ;
+}
+.invalid{
+    border: 1px solid red;
+}
+.none{
+    display: none;
+}
+i:hover{
+    cursor: pointer;
+}
+#EmptyTask{
+    width: 95%;
+    margin: auto;
+    margin-top: 15px !important;
+}
+.checked{
+    background-color: gray;
+    color: brown;
+}
+#deleteAll{
+    background-color: brown;
+}
+h2{
+    color: white;
+}
+.space{
+    height: 200px;
+    width: 100%;
+}
+.copyRight h6{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: 200;
+}
+.count{
+    height: 30px;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+#confirm-modal{
+    display:none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    z-index: 1000;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+#confirm-modal .d-flex{
+    width: 100%;
+    justify-content: space-between;
+}
+#confirm-delete-all{
+    background-color:rgba(0, 0, 255, 0.795);
+    border: 0px;
+    color: white;
+    width: 45%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#cancel-delete-all{
+    background-color:rgba(255, 0, 0, 0.76);
+    border: 0px;
+    color: white;
+    width: 45%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#overlay {
+    display:none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 999;
+}
+  
